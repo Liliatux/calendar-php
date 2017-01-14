@@ -1,0 +1,29 @@
+body {
+	margin: 0 auto;
+	text-align: center;
+}
+
+.title {
+	color: red;
+}
+
+.container {
+	display: flex;
+}
+
+.calendar {
+	margin: 2em;
+}
+
+.coloneHead {
+	padding: 1em;
+	color: purple;
+	font-size: 1.5rem;
+	font-weight: bold;
+}
+
+.coloneBody {
+	padding: 1em;
+	font-size: 1.5rem;
+	border: solid grey 2px;
+}
