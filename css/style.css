@@ -1,6 +1,8 @@
 body {
 	margin: 0 auto;
 	text-align: center;
+	color: grey;
+	width: 90%;
 }
 
 .title {
@@ -11,19 +13,28 @@ body {
 	display: flex;
 }
 
+.date {
+	color: black;
+	margin-top: 2em;
+}
+
 .calendar {
-	margin: 2em;
+	margin: 3em;
+	font-size: 1.3rem;
 }
 
 .coloneHead {
-	padding: 1em;
-	color: purple;
-	font-size: 1.5rem;
 	font-weight: bold;
+	width: 5em;
+	height: 2em;
 }
 
 .coloneBody {
-	padding: 1em;
-	font-size: 1.5rem;
+	border: solid grey 2px;
+	height: 4em;
+}
+
+.styleForm {
+	background-color: white;
 	border: solid grey 2px;
 }

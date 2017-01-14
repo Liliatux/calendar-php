@@ -13,22 +13,24 @@
 	<h1 class="title">Calendrier PHP</h1>
 	<div class="container">
 		<div class="calendar">
+			<h3>Selectionez une date:</h3>
 			<form action="index.php" method="post">
 				<label for="month">Mois</label>
-				<select name="month" id="month">
+				<select class="styleForm" name="month" id="month">
 					<?php foreach ($month as $key => $value): ?>
 						<option value="<?= $key; ?>"><?= $value; ?></option>
 					<?php endforeach; ?>
 				</select>
 				<label for="year">Année</label>
-				<select name="year" id="year">
+				<select class="styleForm" name="year" id="year">
+					<option value="0"></option>
 					<?php for ($year = 2017; $year >= 1970; $year--) { ?>
 						<option value="<?= $year; ?>"><?= $year; ?></option>
 					<?php } ?>
 				</select>
-				<input type="submit">
+				<input class="styleForm" type="submit">
 			</form>
-			<h2><?= $_POST['month']." ".$_POST['year']; ?></h2>
+		<h2 class="date"><?= $_POST['month']." ".$_POST['year']; ?></h2>
 		</div>
 		<div class="calendar">
 			<table>
